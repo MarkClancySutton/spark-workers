@@ -12,7 +12,7 @@
       "deviceName": "slave1",
       "initializeParams": {
         "diskSizeGb": "10",
-        "diskType": "projects/balmy-cab-370312/regions/europe-west1/subnetworks/default",
+        "diskType": "projects/balmy-cab-370312/regions/europe-west1-b/subnetworks/default",
         "labels": {},
         "sourceImage": "projects/debian-cloud/global/images/debian-11-bullseye-v20221102"
       },
@@ -26,12 +26,12 @@
   "guestAccelerators": [],
   "keyRevocationActionType": "STOP",
   "labels": {},
-  "machineType": "projects/balmy-cab-370312/regions/europe-west1/subnetworks/default",
+  "machineType": "projects/balmy-cab-370312/regions/europe-west1-b/subnetworks/default",
   "metadata": {
     "items": [
       {
         "key": "startup-script",
-        "value": "apt update\ncurl --output spark.tgz https://dlcdn.apache.org/spark/spark-3.3.1/spark-3.3.1-bin-hadoop3.tgz\napt -y install default-jdk\ntar -xzvf spark.tgz\n./spark-3.3.1-bin-hadoop3/sbin/start-slave.sh spark://projects/balmy-cab-370312/regions/europe-west1.c.spark-371009.internal:7077"
+        "value": "apt update\ncurl --output spark.tgz https://dlcdn.apache.org/spark/spark-3.3.1/spark-3.3.1-bin-hadoop3.tgz\napt -y install default-jdk\ntar -xzvf spark.tgz\n./spark-3.3.1-bin-hadoop3/sbin/start-slave.sh spark://projects/balmy-cab-370312/regions/europe-west1-b.c.spark-371009.internal:7077"
       }
     ]
   },
@@ -78,5 +78,5 @@
   "tags": {
     "items": []
   },
-  "zone": "projects/balmy-cab-370312/regions/europe-west1"
+  "zone": "projects/balmy-cab-370312/regions/europe-west1-b"
 }
