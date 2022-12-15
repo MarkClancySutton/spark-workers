@@ -12,7 +12,7 @@
       "deviceName": "slave4",
       "initializeParams": {
         "diskSizeGb": "10",
-        "diskType": "projects/balmy-cab-370312/zones/us-central1-a/diskTypes/pd-balanced",
+        "diskType": "projects/balmy-cab-370312/zones/europe-west1-b/diskTypes/pd-balanced",
         "labels": {},
         "sourceImage": "projects/debian-cloud/global/images/debian-11-bullseye-v20221206"
       },
