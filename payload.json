@@ -14,7 +14,7 @@
         "diskSizeGb": "10",
         "diskType": "projects/balmy-cab-370312/regions/europe-west1/subnetworks/default",
         "labels": {},
-        "sourceImage": "projects/balmy-cab-370312/regions/europe-west1/subnetworks/default"
+        "sourceImage": "projects/debian-cloud/global/images/debian-11-bullseye-v20221102"
       },
       "mode": "READ_WRITE",
       "type": "PERSISTENT"
@@ -59,7 +59,7 @@
   },
   "serviceAccounts": [
     {
-      "email": "569439294570-compute@developer.gserviceaccount.com",
+      "email": "132479684440-compute@developer.gserviceaccount.com",
       "scopes": [
         "https://www.googleapis.com/auth/devstorage.read_only",
         "https://www.googleapis.com/auth/logging.write",
