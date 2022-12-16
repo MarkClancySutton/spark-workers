@@ -9,10 +9,10 @@
     {
       "autoDelete": true,
       "boot": true,
-      "deviceName": "slave4",
+      "deviceName": "slave1",
       "initializeParams": {
         "diskSizeGb": "10",
-        "diskType": "projects/balmy-cab-370312/zones/europe-west1-b/diskTypes/pd-balanced",
+        "diskType": "projects/balmy-cab-370312/zones/us-central1-a/diskTypes/pd-balanced",
         "labels": {},
         "sourceImage": "projects/debian-cloud/global/images/debian-11-bullseye-v20221206"
       },
@@ -31,11 +31,11 @@
     "items": [
       {
         "key": "startup-script",
-        "value": "apt update\ncurl --output spark.tgz https://dlcdn.apache.org/spark/spark-3.3.1/spark-3.3.1-bin-hadoop3.tgz\napt -y install default-jdk\ntar -xzvf spark.tgz\n./spark-3.3.1-bin-hadoop3/sbin/start-slave.shspark://spark-master.europe-west1-b.c.balmy-cab-370312.internal:7077"
+        "value": "apt update\ncurl --output spark.tgz https://dlcdn.apache.org/spark/spark-3.3.1/spark-3.3.1-bin-hadoop3.tgz\n\napt -y install default-jdk\ntar -xzvf spark.tgz\n./spark-3.3.1-bin-hadoop3/sbin/start-slave.spark://spark-master.europe-west1-b.c.balmy-cab-370312.internal:7077"
       }
     ]
   },
-  "name": "slave4",
+  "name": "slave1",
   "networkInterfaces": [
     {
       "accessConfigs": [
@@ -48,6 +48,9 @@
       "subnetwork": "projects/balmy-cab-370312/regions/europe-west1/subnetworks/default"
     }
   ],
+  "params": {
+    "resourceManagerTags": {}
+  },
   "reservationAffinity": {
     "consumeReservationType": "ANY_RESERVATION"
   },
